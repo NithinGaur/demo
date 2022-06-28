@@ -1,0 +1,66 @@
+                                   ______________________
+                                  |  CONTROL STATEMENTS  |
+                                  |_____________________|
+
+program: set of instructions
+I0
+I1
+.
+.
+.
+Ik
+
+control statements enable us to specify the order in which the various statements in a program are to  be executed.
+three types control statements 
+=> Selection statements (if,if..else,if..elif..else)
+=> Iterative statements ( while , for)
+=> Transfer statements (break, continue, pass, return)
+
+The if statement:  The if statement is a selection control statement. It selects the appropriate set of instructions to execute based on the value of  a given boolean expression.
+In Python-Speak a block of code that is sequence of one or more statements is called a suite.
+
+_____________________________________________________
+if boolean_expression:      #if header 
+    if_suite
+statement-x  #immediate next statement after the if structure 
+ _____________________________________________________
+  
+if  the boolean_expression evaluates to true , the if_suite gets executed and then the next statement after the simple if structure i.e statement-x gets executed .
+if the boolean_expression evalutes to false , the if_suite is skipped off and the control goes to the next statement after the simple if structure. 
+
+#program to calcuate the discount
+#A discount of 16% is offered to the customers on purchases >=Rs 10,000
+discount,discount_amount=0.0 , 0.0
+purchases=float(input('Enter the value of purchases :Rs '))
+if purchases >= 10000: #if header 
+    discount=16
+    discount_amount= purchases*discount/100
+total_bill=purchases - discount_amount
+print('TotalBill Rs:%.2f'%(total_bill))
+
+Test Cases:
+
+Test Case 1: Enter the value of purchases :Rs 12500
+             TotalBill Rs:10500.00
+
+Test Case 2: Enter the value of purchases :Rs 8000
+                       TotalBill Rs:8000.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
